@@ -1,0 +1,694 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Kanit:wght@600&family=Playfair+Display:wght@600;700;800;900&family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #27374d;
+  color: #dde6ed;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #526d82;
+  align-items: center;
+  height: 80px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #dde6ed;
+  font-size: 1rem;
+  transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+#element {
+  color: #576cbc;
+}
+
+nav ul li a:hover {
+  color: #9db2bf;
+  font-size: 1.1rem;
+}
+
+.left {
+  font-size: 1.35rem;
+}
+
+.firstSection {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.leftSection {
+  font-size: 2rem;
+  margin: 30px 0;
+}
+
+main hr {
+  border: 0;
+  background: #dde6ed;
+  height: 1.2px;
+}
+
+.rightSection img {
+  width: 80%;
+}
+
+.firstSection > div {
+  width: 40%;
+}
+
+.color {
+  color: #576cbc;
+}
+
+.secondSection h1 {
+  font-size: 2rem;
+}
+
+.secondSection {
+  max-width: 86.8vw;
+  margin: auto;
+  padding: 25px 82px;
+  height: 80vh;
+}
+
+.learn {
+  color: rgb(199, 194, 194);
+  font-size: 20px;
+}
+
+footer {
+  background-color: #47788b;
+  margin-top: 750px;
+}
+
+.footer {
+  display: flex;
+  padding: 30px 130px;
+  margin: 450px 0 0;
+  justify-content: space-evenly;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #b3d3e7;
+  font-size: 16px;
+  transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.footer ul li a:hover {
+  color: #fafafa;
+  font-size: 18px;
+}
+
+.footer > div {
+  width: 300px;
+}
+
+footer .footer-text-center {
+  text-align: center;
+  color: #fafafa;
+  padding: 15px 0;
+}
+
+.leftSection .btn {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #27374d;
+  border: 2px solid white;
+  font-size: 20px;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.leftSection .buttons {
+  padding: 20px 0;
+}
+
+.leftSection .btn a {
+  text-decoration: none;
+}
+
+.leftSection .btn:hover {
+  background-color: #1a2638;
+  color: #b3d3e7;
+  transform: scale(1.05);
+}
+
+.services {
+  padding: 40px 0;
+  margin-bottom: -100px;
+}
+
+.services-content {
+  max-width: 800px;
+  margin: 0;
+}
+
+.service {
+  margin-bottom: 30px;
+}
+
+.service h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 18px;
+}
+
+.about-section {
+  padding: 25px 82px;
+}
+
+.about-section h2 {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.username {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: white;
+}
+
+.candidatos {
+  position: relative;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.candidatos .parcial {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.candidatos .parcial .info {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+.candidatos .parcial .info .name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.9;
+  font-family: "Poppins", sans-serif;
+}
+
+.candidatos .parcial .info .percentage-num {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.candidatos .parcial .progressBar {
+  position: relative;
+  width: 100%;
+  height: 7px;
+  margin: 30px 0 2px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.candidatos .parcial .percentagem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 7px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #0bceaf;
+  -webkit-transition: 3s all;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-name: animationProgress;
+  font-family: "Poppins", sans-serif;
+}
+
+.precentual {
+  animation-name: animationProgress;
+}
+
+@keyframes animationProgress {
+  from {
+    width: 0;
+  }
+}
+
+.contact-section {
+  padding: 80px 0;
+}
+
+.section-heading h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.section-heading p {
+  font-size: 18px;
+  color: #6c757d;
+}
+
+.contact-form label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #343a40;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Style for input fields in the Contact Me section */
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.btn-two {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #27374d;
+  border: 2px solid white;
+  font-size: 20px;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.about-content p {
+  align-items: justify;
+}
+
+.btn-two:hover {
+  background-color: #1a2638;
+  color: #b3d3e7;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 850px) {
+  nav {
+    flex-direction: column;
+  }
+  .leftSection {
+    font-size: 25px;
+  }
+  .leftSection .btn {
+    padding: 10px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .leftSection {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .secondSection {
+    height: 140vh;
+  }
+  .leftSection {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .leftSection .btn {
+    padding: 8px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .rightSection {
+    display: none;
+  }
+  .leftSection {
+    width: 70%;
+  }
+
+  .leftSection .main-div-leftSection {
+    margin-left: -90px;
+    width: 150%;
+    justify-content: center;
+  }
+  .leftSection .buttons {
+    margin-left: -90px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .right ul li a {
+    font-size: 13px;
+  }
+
+  .left {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .right ul li a {
+    font-size: 10px;
+  }
+
+  .leftSection .main-div-leftSection {
+    margin-left: -75px;
+  }
+
+  .leftSection .buttons {
+    margin-left: -75px;
+  }
+
+  .about-section h2 {
+    font-size: 20px;
+  }
+
+  .about-content p {
+    font-size: 15px;
+  }
+
+  .learn {
+    font-size: 15px;
+  }
+
+  .secondSection h1 {
+    font-size: 25px;
+  }
+
+  .services-content h1 {
+    font-size: 20px;
+  }
+
+  .services-content .service h3 {
+    font-size: 15px;
+  }
+
+  .services-content .service p {
+    font-size: 15px;
+  }
+
+  .contact-section .contant-container .section-heading h2 {
+    font-size: 20px;
+  }
+
+  .contact-section .contant-container .section-heading p {
+    font-size: 15px;
+  }
+
+  .contact-section .contant-container .row .col-lg-8 .contact-info p {
+    font-size: 15px;
+  }
+
+  nav ul li {
+    margin: 0 20px;
+  }
+
+  .left {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer .footer-first h3 {
+    font-size: 15px;
+  }
+
+  .footer .footer-second {
+    font-size: 15px;
+  }
+
+  .footer .footer-second ul li a {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .footer .footer-first h3 {
+    font-size: 10px;
+  }
+
+  .footer .footer-second {
+    font-size: 10px;
+  }
+
+  .footer .footer-second ul li a {
+    font-size: 10px;
+  }
+
+  .footer-text-center {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 464px) {
+  .leftSection .main-div-leftSection {
+    margin-left: -60px;
+  }
+
+  .leftSection .buttons {
+    margin-left: -60px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .leftSection .main-div-leftSection {
+    margin-left: -55px;
+  }
+
+  .leftSection .buttons {
+    margin-left: -55px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .leftSection .main-div-leftSection {
+    margin-left: -43px;
+  }
+
+  .leftSection .buttons {
+    margin-left: -43px;
+  }
+
+  .footer .footer-first h3 {
+    font-size: 8px;
+  }
+
+  .footer .footer-second {
+    font-size: 8px;
+  }
+
+  .footer .footer-second ul li a {
+    font-size: 8px;
+  }
+
+  .footer-text-center {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .right ul li a {
+    font-size: 8px;
+  }
+
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  .left {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .leftSection .main-div-leftSection {
+    margin-left: -35px;
+  }
+
+  .leftSection .buttons {
+    margin-left: -35px;
+  }
+
+  .footer .footer-first h3 {
+    font-size: 6px;
+  }
+
+  .footer .footer-second {
+    font-size: 6px;
+  }
+
+  .footer .footer-second ul li a {
+    font-size: 6px;
+  }
+
+  .footer-text-center {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .main-div-leftSection {
+    font-size: 15px;
+  }
+
+  .leftSection .main-div-leftSection {
+    margin-left: -25px;
+  }
+
+  .leftSection .btn {
+    padding: 4px;
+    font-size: 10px;
+  }
+
+  .leftSection .buttons {
+    margin-left: -25px;
+  }
+
+  .footer .footer-first h3 {
+    font-size: 4.5px;
+  }
+
+  .footer .footer-second {
+    font-size: 4.5px;
+  }
+
+  .footer .footer-second ul li a {
+    font-size: 4.5px;
+  }
+
+  .footer-text-center {
+    font-size: 4.5px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contact-section .contant-container .row .col-lg-8 .contact-info p {
+    font-size: 10px;
+  }
+  .candidatos .parcial .info .name {
+    font-size: 10px;
+  }
+
+  .secondSection {
+    height: 180vh;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .leftSection .main-div-leftSection {
+    margin-left: -15px;
+  }
+
+  .leftSection .buttons {
+    margin-left: -15px;
+  }
+
+  .right ul li a {
+    font-size: 6px;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+}
