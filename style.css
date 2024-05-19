@@ -471,74 +471,74 @@ i{
   position: relative;
   display: block;
   height: 100%;
-  width: 90%;
+  width: 100%;
   border-radius: 6px;
   background-color: #2c3e50;
   animation: progress 0.4s ease-in-out forwards;
   opacity: 0;
 }
 
-.skill-per .html{
+.skill-box .html{
+  animation-delay: 0.1s;
+  width: 94% !important;
+}
+
+.skill-box .css{
   animation-delay: 0.1s;
   width: 94%;
 }
 
-.skill-per .css{
-  animation-delay: 0.1s;
-  width: 94%;
-}
-
-.skill-per .javascript{
+.skill-box .javascript{
   animation-delay: 0.1s;
   width: 87%;
 }
 
-.skill-per .python{
+.skill-box .python{
   animation-delay: 0.1s;
   width: 96%;
 }
 
-.skill-per .data-science{
+.skill-box .data-science{
   animation-delay: 0.1s;
   width: 89%;
 }
 
-.skill-per .machine-learning{
+.skill-box .machine-learning{
   animation-delay: 0.1s;
   width: 85%;
 }
 
-.skill-per .deep-learning{
+.skill-box .deep-learning{
   animation-delay: 0.1s;
   width: 79%;
 }
 
-.skill-per .neural-networks{
+.skill-box .neural-networks{
   animation-delay: 0.1s;
   width: 62%;
 }
 
-.skill-per .full-stack-development{
+.skill-box .full-stack-development{
   animation-delay: 0.1s;
   width: 89%;
 }
 
-.skill-per .web-hosting{
+.skill-box .web-hosting{
   animation-delay: 0.1s;
   width: 91%;
 }
 
-.skill-per .search-engine-optimization{
+.skill-box .search-engine-optimization{
   animation-delay: 0.1s;
   width: 87%;
 }
 
-.skill-per .django{
+.skill-box .django{
   animation-delay: 0.1s;
   width: 93%;
 }
 
-.skill-per .flask{
+.skill-box .flask{
   animation-delay: 0.1s;
   width: 79%;
 }
