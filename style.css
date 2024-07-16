@@ -131,6 +131,10 @@ nav{
   background: var(--first-color);
 }
 
+.icon i{
+  color: var(--icon-color);
+}
+
 /* Mode Starts  */
 .mode{
   display: flex;
