@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <script src="https://kit.fontawesome.com/0e5fa0ea8a.js" crossorigin="anonymous"></script>
 </head>
@@ -295,20 +295,21 @@
               </div>
             </div>
             <div class="col">
-              <div class="form-control">
+              <form class="form-control" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="2d6a6e04-a848-4fb7-b087-17f615019035">
                 <div class="form-inputs">
-                  <input type="text" class="input-field" placeholder="Your Name" id="name">
-                  <input type="email" class="input-field" placeholder="Your Email" id="email">
+                  <input type="text" class="input-field" placeholder="Your Name" id="name" name="name">
+                  <input type="email" class="input-field" placeholder="Your Email" id="email" name="email">
                 </div>
                 <div class="text-area">
-                  <input type="text" class="input-subject" placeholder="Subject" id="subject">
-                  <textarea placeholder="Message" id="message"></textarea>
+                  <input type="text" class="input-subject" placeholder="Subject" id="subject" name="subject">
+                  <textarea placeholder="Message" id="message" name="message"></textarea>
                 </div>
                 <div class="form-button">
-                  <a class="btn" id="sendEmail" href="#">Send <i class="uil uil-message"></i></a>
+                  <button type="submit" class="btn" id="sendEmail">Send <i class="uil uil-message"></i></button>
                 </div>
-              </div>
-            </div>
+              </form>
+            </div>            
           </div>
         </section>
         <!-- Contact Box Ends -->
@@ -347,26 +348,10 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
     <script src="script.js"></script>
-
+    <script src="wow.min.js"></script>
     <script>
-      document.getElementById("sendEmail").addEventListener("click", function() {
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var subject = document.getElementById("subject").value;
-        var message = document.getElementById("message").value;
-      
-        var mailtoLink = "mailto:imanmassoudi9@gmail.com" +
-                         "?subject=" + encodeURIComponent(subject) +
-                         "&body=Name: " + encodeURIComponent(name) +
-                         "%0D%0AEmail: " + encodeURIComponent(email) +
-                         "%0D%0ASubject: " + encodeURIComponent(subject) +
-                         "%0D%0AMessage: " + encodeURIComponent(message);
-      
-        window.location.href = mailtoLink;
-      });
+      new WOW().init();
     </script>
-      
 </body>
 </html>
